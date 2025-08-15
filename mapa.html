@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Localizações dos Eventos - COP30</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <i class="bi bi-globe2 logo-icon"></i>
+          <div class="ms-2">
+            <span class="logo-title">COP30</span><br />
+            <small class="logo-subtitle">BELÉM • 2025</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="menuNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="mapa.html">Mapa</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <a href="#" class="nav-icon"><i class="bi bi-search"></i></a>
+          <a href="#" class="nav-icon position-relative">
+            <i class="bi bi-bell"></i>
+            <span class="badge-notification"></span>
+          </a>
+          <a href="#" class="nav-icon position-relative">
+            <i class="bi bi-exclamation-triangle"></i>
+            <span class="badge-notification"></span>
+          </a>
+          <a href="#" class="nav-icon"><i class="bi bi-brightness-high"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container-fluid mt-5 p-5">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap"
+          >
+            <div>
+              <h2 class="fw-bold">Localizações dos Eventos</h2>
+              <p class="text-white-50">
+                Encontre todos os locais com informações de trânsito em tempo
+                real e rotas otimizadas
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <span class="d-flex align-items-center">
+                <span
+                  class="dot-traffic"
+                  style="background-color: #00d26a"
+                ></span>
+                Fluxo Normal
+              </span>
+              <span class="d-flex align-items-center">
+                <span
+                  class="dot-traffic"
+                  style="background-color: #ffc107"
+                ></span>
+                Trânsito Moderado
+              </span>
+              <span class="d-flex align-items-center">
+                <span
+                  class="dot-traffic"
+                  style="background-color: #dc3545"
+                ></span>
+                Congestionamento
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 d-flex flex-column flex-lg-row">
+          <div class="map-panel p-4 flex-grow-1 me-lg-4 mb-4 mb-lg-0">
+            <div class="map-placeholder">
+              <div class="alert alert-warning text-center">
+                <i class="bi bi-exclamation-triangle-fill"></i> Congestionamento
+                detectado em 2 locais
+              </div>
+            </div>
+            <div class="map-buttons mt-3 d-flex justify-content-end gap-2">
+              <button class="btn btn-outline-light active">Mapa</button>
+              <button class="btn btn-outline-light">Satélite</button>
+              <button class="btn btn-outline-light">Trânsito</button>
+            </div>
+            <div class="map-footer d-flex align-items-center mt-3 p-3">
+              <i class="bi bi-lightbulb-fill me-3 text-warning"></i>
+              <p class="mb-0 text-white-50">
+                Mapa inteligente com informações de trânsito em tempo real para
+                otimizar sua jornada pelos eventos da COP30.
+              </p>
+            </div>
+          </div>
+
+          <div class="sidebar-panel p-4 d-flex flex-column gap-4">
+            <div class="p-3">
+              <h5 class="fw-bold mb-3">Próximos Eventos</h5>
+              <div class="list-group">
+                <div
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <p class="mb-0 fw-bold">10:00</p>
+                    <small class="text-white-50">Opening Session</small>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <p class="mb-0 fw-bold">13:00</p>
+                    <small class="text-white-50">Climate Panel</small>
+                  </div>
+                </div>
+                <div
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <p class="mb-0 fw-bold">15:30</p>
+                    <small class="text-white-50">Sustainable Solutions</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h5 class="fw-bold mb-3">Status do Trânsito</h5>
+              <div class="list-group">
+                <div
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <p class="mb-0 fw-bold">Hangar Centro de Convenções</p>
+                  </div>
+                  <span class="badge text-bg-warning">15-20 min</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="alert-transtio-fixed d-flex align-items-center">
+              <i class="bi bi-exclamation-triangle-fill me-2"></i> Alertas de
+              Trânsito Crítico
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
